@@ -14,11 +14,13 @@ export default function Card(props) {
           <div className="Card-content-description">
             <h5>{props.description}</h5>
           </div>
-          <div className="Card-content-btns">
-            <a href="#" className="btn Card-content-btn">
-                <button>test Drive</button> </a>
-
-          </div>
+          {props.btnName && (
+            <div className="Card-content-btns">
+              <a href={props.btnUrl} className="btn Card-content-btn">
+                <button>{props.btnName}</button>
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>

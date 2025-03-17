@@ -27,9 +27,9 @@ export default function BackStagePassSection() {
                   </p>
                 </div>
                 <div className="BackStagePassSection-cards">
-                    <Card img={flyingRocket} title="" description="Take Finay for a Spin—Explore the Ecosystem and Experience It in Action."/>
-                    <Card img={handMusic} title="" description="The Numbers. The Strategy. The Vision. Discover How Finay Is Bridging Music and Web3."/>
-                    <Card img={plateMusic} title="" description="A Glimpse Into Finay’s Next Evolution—Experience Music in a New Dimension."/>
+                    <Card img={flyingRocket} title="" description="Take Finay for a Spin—Explore the Ecosystem and Experience It in Action." btnName="Test Drive" btnUrl="#"/>
+                    <Card img={handMusic} title="" description="The Numbers. The Strategy. The Vision. Discover How Finay Is Bridging Music and Web3." btnName="The Breakdown" btnUrl="#"/>
+                    <Card img={plateMusic} title="" description="A Glimpse Into Finay’s Next Evolution—Experience Music in a New Dimension." btnName="Step Inside" btnUrl="#"/>
                     
                 </div>
               </div>

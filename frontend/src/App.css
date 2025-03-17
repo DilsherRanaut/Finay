@@ -81,6 +81,9 @@ p{
 span.text-orange {
   color: #FF8200;
 }
+button:focus, button:focus-visible {
+  outline: none;
+}
 
 /* -------------- css for hero section --------------  */
 .HeroSection.section {
@@ -108,7 +111,7 @@ span.text-orange {
 }
 .HeroSection-bg-video video {
 width: 100%;
-aspect-ratio: 5/2.4;
+/* aspect-ratio: 5/2.4; */
 height: 100%;
 }
 .HeroSection-inner {
@@ -249,7 +252,7 @@ section.BackStagePassSection {
   background: linear-gradient(360deg, #FF8200 -3.33%, #F1922E 100%);
 
 }
-.Card-inner:hover a button {
+.Card-inner:hover a button{
   color: #ff8200;
   background: #fff;
   border: 1px solid #fff;
