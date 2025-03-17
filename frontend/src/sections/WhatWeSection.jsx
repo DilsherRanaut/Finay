@@ -19,7 +19,7 @@ export default function WhatWeSection() {
             <div className="WhatWeSection-varticle-card">
                 <VerticalCard img={moneyCoin} title="Ownership Pays. Growth Rewards. Everyone Wins." description="With Finay, music is an asset. Artists sell directly to fans, earn resale royalties, and fuel a system where value flows back to the people. Through Finay's Ambassador Program, artists, influencers, and fans earn rewards for growing the movement—turning adoption into opportunity for all."/>
                 <VerticalCard img={musicCoin} title="An Economy Built for the People." description="For decades, middlemen dictated how music was bought and sold. Finay flips the model—creating a space where artists, fans, and investors connect, collaborate, and share in the industry's success. From livestreams to social engagement to direct sales, Finay is the digital home for the music community."/>
-                <VerticalCard img={moneyCoin} title="A Marketplace Today—A DAO Tomorrow." description="Finay starts as a marketplace but grows into a fully decentralized music ecosystem—where artists and fans shape the platform, investors drive its expansion, and governance belongs to the community. Early backers fuel more than a platform—they ignite a movement."/>
+                <VerticalCard img={headphoneCoin} title="A Marketplace Today—A DAO Tomorrow." description="Finay starts as a marketplace but grows into a fully decentralized music ecosystem—where artists and fans shape the platform, investors drive its expansion, and governance belongs to the community. Early backers fuel more than a platform—they ignite a movement."/>
 
             </div>
 

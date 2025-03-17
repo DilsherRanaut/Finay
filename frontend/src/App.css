@@ -147,7 +147,9 @@ a.btn button {
   border-radius: 100px;
   text-transform: uppercase;
 }
-
+.HeroSection-btns a:hover button {
+  background: #ff8200;
+}
 
 
 /* css for what we section */
@@ -197,6 +199,65 @@ a.btn button {
 
 }
 
+
+/* css for backstagepass section  */
+section.BackStagePassSection {
+  position: relative;
+  padding-bottom: 300px;
+}
+.BackStagePassSection-bg-video video {
+  width: 100%;
+}
+.BackStagePassSection-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.BackStagePassSection-cards {
+  display: flex;
+  margin-top: 250px;
+  gap: 30px;
+}
+
+.Card-inner {
+  border-radius: 20px;
+  background: linear-gradient(180deg, #000000 0%, #190D00 100%);
+  text-align: center;
+  padding: 50px;
+  border: 1px solid #282828;
+}
+.Card-img img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.Card-content-description  h5 {
+  margin: 30px 0;
+  font-size: 24px;
+  font-weight: 200;
+}
+.Card-content-btns {
+  margin: 20px 0;
+}
+.Card-content-btns a.btn button {
+  max-width: 200px;
+  width: inherit;
+}
+.Card-inner:hover {
+  background: linear-gradient(360deg, #FF8200 -3.33%, #F1922E 100%);
+
+}
+.Card-inner:hover a button {
+  color: #ff8200;
+  background: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+
 @media screen and (max-width: 1369px) {
   .container {
     width: 95%;
@@ -207,10 +268,11 @@ a.btn button {
 .animated-logo img {
   max-width: 13vw;
 }
-.HeroSection-subtitle h5 {
+.HeroSection-subtitle h5, .Card-content-description  h5  {
   margin: 3vw 0;
   font-size: 1.6vw;
 }
+
 .HeroSection-content {
   padding: 4vw 0 0;
 }
@@ -233,7 +295,16 @@ a.btn button {
 p {
   font-size: 1.3vw;
 }
-
+.BackStagePassSection-cards {
+  margin-top: 15vw;
+  gap: 2vw;
+}
+.Card-inner {
+  padding: 3vw;
+}
+.Card-img img {
+  max-width: 9vw;
+}
 
   
 }

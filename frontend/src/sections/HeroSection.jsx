@@ -1,8 +1,6 @@
 import React from "react";
 import logo from "../assets/images/finay-logo.gif"
 import bgVideo from "../assets/images/hero-bg.mp4"
-import orangeGradientImg from "../assets/images/orange-gradient.png"
-import rotationalPlanetImg from "../assets/images/rotational-planet.png"
 
 export default function HeroSection() {
   return (
