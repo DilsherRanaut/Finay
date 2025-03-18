@@ -111,7 +111,6 @@ button:focus, button:focus-visible {
 }
 .HeroSection-bg-video video {
 width: 100%;
-/* aspect-ratio: 5/2.4; */
 height: 100%;
 }
 .HeroSection-inner {
@@ -260,6 +259,161 @@ section.BackStagePassSection {
 
 }
 
+/* css for image with text component  */
+
+.ImageWithText-inner {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.ImageWithText-inner-left {
+  width: 45%;
+}
+
+.ImageWithText-inner-right {
+  width: 55%;
+}
+.ImageWithText-inner-img img {
+  width: 100%;
+  max-width: 520px;
+}
+.ImageWithText-inner-description {
+  margin-bottom: 30px;
+}
+.ImageWithText-inner-btns a button {
+  max-width: 200px;
+  width: inherit;
+}
+.ImageWithText-inner-btns a:hover button {
+  background: #ff8200;
+}
+
+
+/* css for Call to action component  */
+.CallToAction-inner-description {
+  margin-bottom: 30px;
+}
+.CallToAction-inner-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.CallToAction-inner-btns a button {
+  border: 1px solid #fff;
+}
+
+/* css for Footer  */
+.Footer-inner {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.Footer-inner-left, .Footer-inner-center, .Footer-inner-right {
+  width: 33.33%;
+}
+.Footer-logo img {
+  width: 100%;
+  max-width: 200px;
+}
+.Footer-social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.Footer-copiright p {
+  color: #727272;
+}
+.footer-icon {
+  padding: 20px;
+  background: #FFFFFF14;
+  border-radius: 100px;
+  line-height: .5;
+}
+
+
+/* css for Promotional CTA component  */
+
+.Promotional_CTA-inner {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.Promotional_CTA-inner-left {
+  width: 55%;
+}
+
+.Promotional_CTA-inner-right {
+  width: 45%;
+}
+
+.Promotional_CTA-inner-img img {
+  width: 100%;
+}
+
+.FutureSection-inner.inner-section {
+  padding: 0;
+}
+
+.Promotional_CTA-inner-img {
+  line-height: 0;
+}
+.Promotional_CTA-inner-title h2 {
+  font-size: 66px;
+  line-height: 1.1;
+}
+
+.Promotional_CTA-inner-btns {
+  display: flex;
+  gap: 30px;
+}
+
+.Promotional_CTA-inner-btns a button {
+  border: 1px solid #fff;
+}
+
+.Promotional_CTA-inner-description {
+  margin-bottom: 30px;
+}
+
+/* css for Future Section  */
+.FutureSection-inner {
+  padding: 0;
+}
+
+/* css for Market Section  */
+.MarketSection-cards {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 1.5%;
+}
+
+.CounterCard {
+  width: 32.33%;
+}
+
+.CounterCard-inner {
+  border: 1px solid #282828;
+  padding: 30px;
+  border-radius: 20px;
+}
+.CounterCard-inner:hover {
+  background: linear-gradient(360deg, #FF8200 -3.33%, #F1922E 100%);
+}
+.CounterCard-content-title h2 {
+  font-weight: 300;
+}
+
+.MarketSection-desciption {
+  margin-bottom: 30px;
+}
+
+
 
 @media screen and (max-width: 1369px) {
   .container {
@@ -268,7 +422,7 @@ section.BackStagePassSection {
   .HeroSection-title h1 {
     font-size: 7vw;
 }
-.animated-logo img {
+.animated-logo img, .Footer-logo img {
   max-width: 13vw;
 }
 .HeroSection-subtitle h5, .Card-content-description  h5  {
