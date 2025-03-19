@@ -7,10 +7,12 @@ import ConversationSection from "../sections/ConversationSection";
 import MarketSection from "../sections/MarketSection";
 import FutureSection from "../sections/FutureSection";
 import Footer from "../sections/Footer";
+import SmoothScroll from "../components/SmoothScroll";
 
 export default function LandingPage() {
   return (
     <div className="landing-page page">
+      <SmoothScroll>
       <HeroSection />
       <WhatWeSection />
       <BackStagePassSection />
@@ -19,6 +21,7 @@ export default function LandingPage() {
       <MarketSection />
       <FutureSection />
       <Footer />
+      </SmoothScroll>
     </div>
   );
 }
