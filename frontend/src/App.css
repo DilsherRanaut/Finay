@@ -155,11 +155,13 @@ a.btn button {
 
 
 /* css for what we section */
+.WhatWeSection-description {
+  margin-bottom: 30px;
+}
 .WhatWeSection-varticle-card{
   display: flex;
   flex-direction: column;
   gap: 35px;
-  padding: 40px 0;
 }
 
 .VerticleCard-content-title h4 {
@@ -215,6 +217,9 @@ section.BackStagePassSection {
   top: 0;
   left: 0;
   width: 100%;
+}
+.BackStagePassSection-description {
+  margin-bottom: 30px;
 }
 
 .BackStagePassSection-cards {
@@ -305,9 +310,10 @@ section.BackStagePassSection {
 .CallToAction-inner-btns a button {
   border: 1px solid #fff;
 }
-.CallToAction-inner-btns a button:hover, .Promotional_CTA-inner-btns a button:hover{
+.CallToAction-inner-btns a button:hover, .Promotional_CTA-inner-btns a button:hover {
   background: #fff;
   color: #ff8200;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* css for Footer  */
@@ -416,7 +422,7 @@ section.BackStagePassSection {
   padding: 0 0 30px;
   margin-bottom: 30px;
 }
-.CounterCard-inner:hover .CounterCard-content-title h2 {
+.CounterCard:hover .CounterCard-content-title h2 {
   border-bottom: 1px solid #ffffff33;
 }
 .CounterCard-circle {
@@ -425,11 +431,11 @@ section.BackStagePassSection {
   margin: 0 auto 30px;
 }
 
-.CounterCard-inner:hover .CircularProgressbar-trail {
+.CounterCard:hover .CircularProgressbar-trail {
   stroke: #FF9F3C !important;;
 }
 
-.CounterCard-inner:hover .CircularProgressbar-path {
+.CounterCard:hover .CircularProgressbar-path {
   stroke: #fff!important;;
 }
 .CounterCard-content-list-item {
@@ -449,16 +455,92 @@ section.BackStagePassSection {
   justify-content: center;
   line-height: 0;
 }
-.CounterCard-inner:hover  .CounterCard-content-list-item-icon i.fa.fa-chevron-right {
+.CounterCard:hover  .CounterCard-content-list-item-icon i.fa {
   background: #ffffff;
   color: #FF8200;
 }
 
-.MarketSection-desciption {
+.MarketSection-description {
   margin-bottom: 30px;
 }
 
 
+/* css for Faq Section  */
+.FaqSection-description {
+  margin-bottom: 30px;
+}
+.FaqSection-inner-faq-lists {
+  display: flex;
+  gap: 50px;
+}
+.FaqSection-inner-faq-lists-left {
+  width: 50%;
+}
+
+.FaqSection-inner-faq-lists-right {
+  width: 50%;
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+span.icon {
+  width: 20px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.accordion-item {
+  border: 1px solid #282828;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.accordion-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.accordion-content {
+  padding: 0 30px 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.accordion-content li {
+  margin-bottom: 20px;
+}
+.accordion-content li:last-child {
+  margin-bottom: 0;
+}
+.accordion-content ul ul {
+  margin-top: 20px;
+}
+
+
+
+
+/* css for Future Section  */
+.ml9 {
+  position: relative;
+  font-weight: 600;
+  font-size: 66px;
+  text-align: start;
+  line-height: 1.3;
+}
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  overflow: hidden;
+}
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+  letter-spacing: -1px;
+}
 
 
 @media screen and (max-width: 1369px) {

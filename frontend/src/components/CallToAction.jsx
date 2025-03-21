@@ -11,10 +11,10 @@ export default function CallToAction(props) {
           <p>{props.description}</p>
         </div>
         <div className="CallToAction-inner-btns">
-          <a href={props.btnOneUrl} className="btn CallToAction-btn">
+          <a href={props.btnOneUrl} className="btn CallToAction-btn" target="_blank">
             <button>{props.btnOneName}</button>
           </a>
-          <a href={props.btnTwoUrl} className="btn CallToAction-btn">
+          <a href={props.btnTwoUrl} className="btn CallToAction-btn" target="_blank">
             <button>{props.btnTwoName}</button>
           </a>
         </div>

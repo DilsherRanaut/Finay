@@ -8,6 +8,7 @@ import MarketSection from "../sections/MarketSection";
 import FutureSection from "../sections/FutureSection";
 import Footer from "../sections/Footer";
 import SmoothScroll from "../components/SmoothScroll";
+import FaqSection from "../sections/FaqSection";
 
 export default function LandingPage() {
   return (
@@ -19,6 +20,7 @@ export default function LandingPage() {
       <FinalStepSection />
       <ConversationSection />
       <MarketSection />
+      <FaqSection/>
       <FutureSection />
       <Footer />
       </SmoothScroll>

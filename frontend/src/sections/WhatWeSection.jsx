@@ -13,7 +13,7 @@ export default function WhatWeSection() {
           <div className="section-title WhatWeSection-title align-center">
                 <h2>The Industry is Broken—We're <span className="text-orange">Fixing </span>it </h2>
             </div>
-            <div className="WhatWeSection-desciption align-center">
+            <div className="WhatWeSection-description align-center">
                 <p>Finay is redefining what it means to own, experience, and invest in music. No middlemen. No limitations. Just a thriving ecosystem where creativity, commerce, and community fuel an industry built for the people who power it.</p>
             </div>
             <div className="WhatWeSection-varticle-card">

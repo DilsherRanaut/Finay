@@ -21,13 +21,13 @@ export default function BackStagePassSection() {
                     Your <span className="text-orange">Backstage</span> Pass to Finay
                   </h2>
                 </div>
-                <div className="BackStagePassSection-desciption align-center">
+                <div className="BackStagePassSection-description align-center">
                   <p>
                   The Platform. The Model. The Opportunity.
                   </p>
                 </div>
                 <div className="BackStagePassSection-cards">
-                    <Card img={flyingRocket} title="" description="Take Finay for a Spin—Explore the Ecosystem and Experience It in Action." btnName="Test Drive" btnUrl="#"/>
+                    <Card img={flyingRocket} title="" description="Take Finay for a Spin—Explore the Ecosystem and Experience It in Action." btnName="Test Drive" btnUrl="https://qa-user.finay.com/home"/>
                     <Card img={handMusic} title="" description="The Numbers. The Strategy. The Vision. Discover How Finay Is Bridging Music and Web3." btnName="The Breakdown" btnUrl="#"/>
                     <Card img={plateMusic} title="" description="A Glimpse Into Finay’s Next Evolution—Experience Music in a New Dimension." btnName="Step Inside" btnUrl="#"/>
                     

@@ -9,7 +9,7 @@ export default function SmoothScroll({ children }) {
   useEffect(() => {
     const lenis = new Lenis({
       smooth: true,
-      lerp: 0.1, // Adjust for smoothness
+      lerp: 0.05, // Adjust for smoothness
       wheelMultiplier: 1, // Scroll speed
     });
 

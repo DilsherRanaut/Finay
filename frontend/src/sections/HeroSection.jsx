@@ -26,7 +26,7 @@ export default function HeroSection() {
             </div>
             <div className="HeroSection-btns ">
                 <a href="/" className="btn deck-btn"><button type="button">Check the deck</button></a>
-                <a href="/" className="btn talk-us-btn"><button type="button">Talk to us</button></a>
+                <a href="https://0zyb441m0a6.typeform.com/to/RY1v4fK7" className="btn talk-us-btn" target="_blank"><button type="button">Talk to us</button></a>
             </div>
 
             </div>

@@ -31,7 +31,7 @@ export default function MarketSection() {
       },
     },
     {
-      percentage: 25,
+      percentage: 30,
       counterValue: "$20B",
       title:
         "Music NFTs are set to grow from $2.85B to $20.81B by 2032 (28.23% CAGR)",
@@ -55,7 +55,7 @@ export default function MarketSection() {
       },
     },
     {
-      percentage: 65,
+      percentage: 90,
       counterValue: "$247B",
       title:
         "livestreaming will hit $247B by 2027—artists are already cashing in",
@@ -67,7 +67,7 @@ export default function MarketSection() {
       },
     },
     {
-      percentage: 65,
+      percentage: 40,
       counterValue: "$25.1B",
       title:
         "DAOs manage over $25.1B in treasuries - community-led platforms are the future",
@@ -91,7 +91,7 @@ export default function MarketSection() {
                 Listens.
               </h2>
             </div>
-            <div className="MarketSection-desciption align-center">
+            <div className="MarketSection-description align-center">
               <p>Artists make pennies. Fans fund billions. What’s broken?</p>
             </div>
             <div className="MarketSection-cards">

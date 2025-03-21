@@ -15,7 +15,7 @@ export default function ImageWithText(props) {
             <p>{props.description}</p>
           </div>
           <div className="ImageWithText-inner-btns">
-            <a href={props.btnUrl} className="btn ImageWithText-btn">
+            <a href={props.btnUrl} className="btn ImageWithText-btn" target="_blank">
               <button>{props.btnName}</button>
             </a>
           </div>

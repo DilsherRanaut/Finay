@@ -16,7 +16,7 @@ export default function Card(props) {
           </div>
           {props.btnName && (
             <div className="Card-content-btns">
-              <a href={props.btnUrl} className="btn Card-content-btn">
+              <a href={props.btnUrl} className="btn Card-content-btn" target="_blank">
                 <button>{props.btnName}</button>
               </a>
             </div>

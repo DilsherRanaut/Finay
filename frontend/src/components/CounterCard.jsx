@@ -16,7 +16,7 @@ export default function CounterCounterCard(props) {
     if (inView) {
       let start = 0;
       const end = props.percentage; // Change this to props.value if dynamic
-      const duration = 1500; // Animation duration in ms
+      const duration = 2500; // Animation duration in ms
       const stepTime = duration / end;
 
       const timer = setInterval(() => {
