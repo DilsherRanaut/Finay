@@ -57,8 +57,7 @@ p{
 }
 .container {
   width: 100%;
-  /* max-width: 1370px; */
-  max-width: 75%;
+  max-width: 1370px;
   margin: 0 auto;
   height: inherit;
 }
