@@ -57,7 +57,8 @@ p{
 }
 .container {
   width: 100%;
-  max-width: 1370px;
+  /* max-width: 1370px; */
+  max-width: 72%;
   margin: 0 auto;
   height: inherit;
 }
@@ -67,7 +68,7 @@ p{
 .section-title h2 {
   font-size: 48px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .align-center {
   text-align: center;
@@ -114,7 +115,7 @@ width: 100%;
 height: 100%;
 }
 .HeroSection-inner {
-  padding: 0;
+  padding: 0!important;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -227,9 +228,12 @@ section.BackStagePassSection {
   margin-top: 250px;
   gap: 30px;
 }
+.Card {
+  width: 33.33%;
+}
 
 .Card-inner {
-  border-radius: 20px;
+  border-radius: 15px;
   background: linear-gradient(180deg, #000000 0%, #190D00 100%);
   text-align: center;
   padding: 50px;
@@ -240,14 +244,14 @@ section.BackStagePassSection {
   max-width: 150px;
 }
 
-.Card-content-description  h5 {
+.Card-content-description h5 {
   margin: 30px 0;
   font-size: 24px;
   font-weight: 200;
+  height: 8vw;
+  overflow: hidden;
 }
-.Card-content-btns {
-  margin: 20px 0;
-}
+
 .Card-content-btns a.btn button {
   max-width: 200px;
   width: inherit;
@@ -281,7 +285,7 @@ section.BackStagePassSection {
 }
 .ImageWithText-inner-img img {
   width: 100%;
-  max-width: 520px;
+  max-width: 420px;
 }
 .ImageWithText-inner-description {
   margin-bottom: 30px;
@@ -297,7 +301,7 @@ section.BackStagePassSection {
 
 /* css for Call to action component  */
 .CallToAction-inner-description {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .CallToAction-inner-btns {
   display: flex;
@@ -321,7 +325,9 @@ section.BackStagePassSection {
   display: flex;
   align-items: center;
   padding: 20px 0;
+  padding: 10px 0;
 }
+
 .Footer-inner-left, .Footer-inner-center, .Footer-inner-right {
   width: 33.33%;
 }
@@ -419,8 +425,8 @@ section.BackStagePassSection {
 .CounterCard-content-title h2 {
   font-weight: 400;
   border-bottom: 1px solid #FF820033;
-  padding: 0 0 30px;
-  margin-bottom: 30px;
+  padding: 0 0 20px;
+  margin-bottom: 20px;
 }
 .CounterCard:hover .CounterCard-content-title h2 {
   border-bottom: 1px solid #ffffff33;
@@ -428,7 +434,7 @@ section.BackStagePassSection {
 .CounterCard-circle {
   width: 100%;
   max-width: 150px;
-  margin: 0 auto 30px;
+  margin: 0 auto 15px;
 }
 
 .CounterCard:hover .CircularProgressbar-trail {
@@ -441,7 +447,7 @@ section.BackStagePassSection {
 .CounterCard-content-list-item {
   display: flex;
   gap: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .CounterCard-content-list-item-icon i.fa.fa-chevron-right {
   background: #FF8200;
@@ -498,6 +504,9 @@ span.icon {
   border-radius: 10px;
   margin-bottom: 20px;
 }
+.accordion-item:last-child {
+  margin-bottom: 0;
+}
 .accordion-title {
   font-size: 18px;
   font-weight: 500;
@@ -508,13 +517,18 @@ span.icon {
   font-weight: 300;
 }
 .accordion-content li {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .accordion-content li:last-child {
   margin-bottom: 0;
 }
+.accordion-content ul {
+padding: 0;
+margin: 0;
+}
 .accordion-content ul ul {
-  margin-top: 20px;
+  margin-top: 10px;
+  padding: 0 0 0 1vw;
 }
 
 
@@ -543,54 +557,213 @@ span.icon {
 }
 
 
-@media screen and (max-width: 1369px) {
+/* css for pdf popup  */
+
+.popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+ /* Full-Screen Black Overlay */
+ .pdf-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000ed; /* Almost black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Clickable Background */
+.pdf-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* PDF Container - Centered */
+.pdf-container, .popup-content  {
+  position: relative;
+  background: transparent;
+  width: 80%;
+  max-width: 900px;
+  height: 80%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(34, 34, 34, 0.2);
+}
+
+/* PDF Viewer */
+.pdf-viewer {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  background: #2d2b2b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 100px;
+  z-index: 1001;
+  transform: translate(-50%, 0%);
+}
+button.close-btn:hover {
+background: red;
+}
+.popup-inner-btns {
+  display: flex;
+  gap: 15px;
+}
+.popup-inner-btns a:hover button {
+  background: #ff8200;
+}
+
+
+@media screen and (max-width: 1569px) {
   .container {
     width: 95%;
 }
-  .HeroSection-title h1 {
-    font-size: 7vw;
+.inner-section {
+  padding: 3.5vw 0;
+} 
+ .HeroSection-title h1 {
+    font-size: 5.3vw;
 }
 .animated-logo img, .Footer-logo img {
   max-width: 13vw;
 }
-.HeroSection-subtitle h5, .Card-content-description  h5  {
-  margin: 3vw 0;
-  font-size: 1.6vw;
+.HeroSection-subtitle h5  {
+  margin: 2vw 0;
+  font-size: 1.4vw;
+}
+.Card-content-description h5  {
+  margin: 1.5vw 0 1vw;
+  font-size: 1.3vw;
 }
 
 .HeroSection-content {
-  padding: 4vw 0 0;
+  padding: 0vw 0 0;
 }
 a.btn button {
-  min-width: 13vw;
-  font-size: 1.1vw;
+  min-width: 12vw;
+  font-size: .9vw;
+  padding: 1vw 0;
+}
+.HeroSection-btns, .CallToAction-inner-btns, .Promotional_CTA-inner-btns  {
+  gap: 1vw;
 }
 
+
 .section-title h2 {
-  font-size: 3vw;
+  font-size: 2.4vw;
 }
 
 .VerticleCard-inner {
-  padding: 3vw 6vw;
-  gap: 6vw;
+  padding: 3vw 5vw;
+  gap: 4vw;
 }
 .VerticleCard-content-title h4 {
-  font-size: 2.2vw;
+  font-size: 1.7vw;
+}
+.VerticleCard-img img {
+  width: 100%;
+  max-width: 12vw;
 }
 p {
-  font-size: 1.3vw;
+  font-size: .93vw;
 }
 .BackStagePassSection-cards {
-  margin-top: 15vw;
+  margin-top: 12vw;
   gap: 2vw;
 }
+section.BackStagePassSection {
+  position: relative;
+  padding-bottom: 12vw;
+}
 .Card-inner {
-  padding: 3vw;
+  padding: 2vw 2.9vw;
 }
 .Card-img img {
-  max-width: 9vw;
+  max-width: 8vw;
 }
-
+.CounterCard {
+  width: 22.9vw;
+  border: 1px solid #282828;
+  border-radius: 1vw;
+}
+.CounterCard-inner {
+  padding: 2vw;
+}
+.CounterCard-circle {
+  max-width: 8vw;
+}
+.CounterCard-content-list-item {
+  gap: 1vw;
+}
+.CounterCard-content-title h2 {
+  font-size: 1.3vw;
+}
+.CounterCard-content-list-item-icon i.fa.fa-chevron-right {
+  width: 1.6vw;
+  height: 1.6vw;
+  font-size: .8vw;
+}
+.FaqSection-inner {
+  padding-top: 0;
+}
+.FaqSection-inner-faq-lists {
+  gap: 3vw;
+}
+.accordion-header {
+  padding: 1vw 1.1vw;
+}
+.accordion-title {
+  font-size: .93vw;
+}
+span.icon {
+  font-size: 1vw;
+}
+.accordion-content {
+  padding: 0 2vw 1vw;
+}
+.accordion-content li {
+  margin-bottom: 1vw;
+  font-size: .92vw;
+}
+.ml9 {
+  font-size: 3.5vw;
+}
+.Footer-inner {
+  padding: 1vw 0;
+}
+.footer-icon {
+  padding: 1.2vw;
+}
   
 }
 @media screen and (max-width: 1024px) {

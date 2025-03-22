@@ -25,7 +25,7 @@ export default function MarketSection() {
       title: "Indie artists—the fastest-growing segment— made $1.2B in 2022",
       contentList: {
         contentListItem1: "Platforms still take up to 85% of their earnings.",
-        contentListItem2: "1K concert tickets = $30K. 1M streams = $5K..",
+        contentListItem2: "1K concert tickets = $30K. 1M streams = $5K.",
         contentListItem3:
           "If talent and hard work were enough, wouldn’t indie artists be thriving?",
       },
