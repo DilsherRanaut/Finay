@@ -18,13 +18,13 @@ export default function Footer() {
               </div>
             </div>
             <div className="Footer-inner-right">
-              <div className="Footer-social-icons">
+              {/* <div className="Footer-social-icons">
               <div className="Footer-facebook footer-icon">F</div>
               <div className="Footer-twitter footer-icon">X</div>
               <div className="Footer-instagram footer-icon">I</div>
               <div className="Footer-linkdin footer-icon">L</div>
               
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
