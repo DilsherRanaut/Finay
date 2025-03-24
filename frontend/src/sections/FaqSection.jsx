@@ -634,44 +634,65 @@ export default function FaqSection() {
     {
       title: (
         <>
-          How Do You Know Artists and Fans Will{" "}
-          <span className="text-orange">Embrace Web3?</span>
+          What Are Our Biggest <span className="text-orange">Risks</span>?
         </>
       ),
       content: (
         <>
           <ul>
             <li>
-              <strong>No learning curve.</strong> Finay works like Twitch and
-              Patreon—no wallets, no crypto required.
+              <strong>Market adoption.</strong> Web3 is still growing, but Finay
+              makes it invisible—
+              <strong> artists and fans onboard seamlessly. </strong>The
+              <strong>Ambassador Program and influencer marketing</strong>
             </li>
             <li>
-              <strong>Familiar rst, Web3 later.</strong> Artists monetize
-              instantly. Fans buy, sell, and engage—Web3 features unlock
-              naturally over time.
-            </li>
-            <li>
+              <strong>Regulatory landscape.</strong> Regulatory landscape.{" "}
               <strong>
-                Why Web3 adoption struggles elsewhere—but won't here.
-              </strong>{" "}
-              Other platforms overwhelm users with crypto tools. Finay does the
-              opposite —{" "}
-              <strong>
-                Web3 runs in the background until users are ready.
+                Finay works with top-tier legal teams to ensure full compliance
+                and adaptability.
               </strong>
             </li>
             <li>
-              <strong>No forced blockchain jump. </strong> Users can engage
-              without touching Web3—but when they do, it's seamless and
-              rewarding.
+              <strong>Platform growth.</strong> Marketplaces thrive on activity.{" "}
+              <strong>
+                Finay incentivizes major and emerging artists with cash & token
+                rewards, ensuring early traction and sustained engagement.{" "}
+              </strong>
             </li>
             <li>
-              Artists follow opportunity. Fans follow artists.{" "}
-              <strong>Finay's Ambassador Program fuels both</strong> — rewarding
-              early adopters for leading the movement.
+              <strong>Scalability.</strong> Growth demands strong
+              infrastructure.{" "}
+              <strong>
+                {" "}
+                Finay’s platform is built to scale from day one, eliminating
+                bottlenecks as adoption accelerates.{" "}
+              </strong>
             </li>
             <li>
-              <strong>"Finay Makes Web3 Invisible."</strong>
+              <strong>Competitive advantage.</strong> Copycats can replicate
+              features—but not community.
+              <strong>
+                {" "}
+                Finay’s ecosystem is artist-first, fan-owned, and built on
+                resale value—giving us a moat that platforms like Spotify can’t
+                adopt without killing their own business model.
+              </strong>
+            </li>
+            <li>
+              <strong>External risks.</strong> Industry shifts and downturns
+              happen.
+              <strong>
+                {" "}
+                Finay’s diversified revenue streams and flexible marketplace
+                model ensure resilience through market cycles.
+              </strong>
+            </li>
+            <li>
+              <strong>
+                “Every disruption faces challenges. The difference? Finay is
+                built to overcome them.”{" "}
+              </strong>
             </li>
           </ul>
         </>
@@ -680,90 +701,67 @@ export default function FaqSection() {
     {
       title: (
         <>
-          How Do You Know Artists and Fans Will{" "}
-          <span className="text-orange">Embrace Web3?</span>
+          How Does Finay Scale
+          <span className="text-orange"> Beyond Music?</span>
         </>
       ),
       content: (
         <>
           <ul>
             <li>
-              <strong>No learning curve.</strong> Finay works like Twitch and
-              Patreon—no wallets, no crypto required.
-            </li>
-            <li>
-              <strong>Familiar rst, Web3 later.</strong> Artists monetize
-              instantly. Fans buy, sell, and engage—Web3 features unlock
-              naturally over time.
-            </li>
-            <li>
+              <strong>Beyond music—rewriting the business playbook.</strong>{" "}
+              Finay isn’t just fixing music—it’s proving a{" "}
               <strong>
-                Why Web3 adoption struggles elsewhere—but won't here.
-              </strong>{" "}
-              Other platforms overwhelm users with crypto tools. Finay does the
-              opposite —{" "}
-              <strong>
-                Web3 runs in the background until users are ready.
+                a new economic model. Decentralized, community-owned economies
+                can replace traditional corporations, giving power back to the
+                people.
               </strong>
             </li>
             <li>
-              <strong>No forced blockchain jump. </strong> Users can engage
-              without touching Web3—but when they do, it's seamless and
-              rewarding.
-            </li>
-            <li>
-              Artists follow opportunity. Fans follow artists.{" "}
-              <strong>Finay's Ambassador Program fuels both</strong> — rewarding
-              early adopters for leading the movement.
-            </li>
-            <li>
-              <strong>"Finay Makes Web3 Invisible."</strong>
-            </li>
-          </ul>
-        </>
-      ),
-    },
-    {
-      title: (
-        <>
-          How Do You Know Artists and Fans Will{" "}
-          <span className="text-orange">Embrace Web3?</span>
-        </>
-      ),
-      content: (
-        <>
-          <ul>
-            <li>
-              <strong>No learning curve.</strong> Finay works like Twitch and
-              Patreon—no wallets, no crypto required.
-            </li>
-            <li>
-              <strong>Familiar rst, Web3 later.</strong> Artists monetize
-              instantly. Fans buy, sell, and engage—Web3 features unlock
-              naturally over time.
-            </li>
-            <li>
+              <strong>Livestreaming, lm, and creator economies</strong> Music is
+              just the start.{" "}
               <strong>
-                Why Web3 adoption struggles elsewhere—but won't here.
-              </strong>{" "}
-              Other platforms overwhelm users with crypto tools. Finay does the
-              opposite —{" "}
-              <strong>
-                Web3 runs in the background until users are ready.
+                Imagine a decentralized Netix, where lms are funded and owned by
+                their audiences. A ticketing system where artists, not
+                middlemen, control access. A creator economy where monetization
+                is direct and transparent.
               </strong>
             </li>
             <li>
-              <strong>No forced blockchain jump. </strong> Users can engage
-              without touching Web3—but when they do, it's seamless and
-              rewarding.
+              <strong> Decentralized marketplaces—the next Amazon.</strong> The
+              current system is built to extract value from consumers and
+              sellers alike.
+              <strong>
+                {" "}
+                What happens when marketplaces are owned by their communities?{" "}
+              </strong>
+              Finay’s model lays the foundation for an Amazon without corporate
+              gatekeepers—where buyers and sellers dictate the economy, not
+              shareholders.
             </li>
             <li>
-              Artists follow opportunity. Fans follow artists.{" "}
-              <strong>Finay's Ambassador Program fuels both</strong> — rewarding
-              early adopters for leading the movement.
+              <strong>A new world of DAOs, powered by Finay Inc. </strong>This
+              isn’t just one DAO—it’s a <strong>blueprint </strong> for how
+              industries can operate in the future{" "}
+              <strong>
+                Finay Inc. will be the infrastructure provider, enabling
+                decentralized governance across multiple verticals
+              </strong>{" "}
+              —music, content, commerce, even nance.
             </li>
             <li>
-              <strong>"Finay Makes Web3 Invisible."</strong>
+              <strong>History repeats itself.</strong> Google changed the world
+              with search. Amazon with e-commerce. Facebook with social.{" "}
+              <strong>
+                Finay starts with music—but its model can reshape entire
+                industries.
+              </strong>
+            </li>
+            <li>
+              <strong>
+                Music is just the beginning. Ownership is the future. And Finay
+                is building the infrastructure to power it.
+              </strong>
             </li>
           </ul>
         </>

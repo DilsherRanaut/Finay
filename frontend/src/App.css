@@ -208,15 +208,23 @@ a.btn button {
 /* css for backstagepass section  */
 section.BackStagePassSection {
   position: relative;
-  padding-bottom: 300px;
 }
 .BackStagePassSection-bg-video video {
   width: 100%;
 }
-.BackStagePassSection-outer {
+/* .BackStagePassSection-outer {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+} */
+.BackStagePassSection-inner {
+  z-index: 0;
+  position: relative;
+  padding-bottom: 0!important;
+}
+.BackStagePassSection-bg-video {
+  position: absolute;
   width: 100%;
 }
 .BackStagePassSection-description {
@@ -266,6 +274,18 @@ section.BackStagePassSection {
   border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+}
+
+.Card-img, .VerticleCard-img {
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.VerticleCard-inner:hover .VerticleCard-img img{
+  animation: imageHanging 2s ease-in-out infinite alternate;
+}
+
+.Card-inner:hover .Card-img img {
+  animation: imageHanging 2s ease-in-out infinite alternate;
 }
 
 /* css for image with text component  */
@@ -404,14 +424,12 @@ section.BackStagePassSection {
 
 /* css for Market Section  */
 .MarketSection-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: .9vw;
-  justify-content: space-between;
+  grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
 .CounterCard {
-  width: 32.33%;
   border: 1px solid #282828;
   border-radius: 20px;
 }
@@ -701,10 +719,7 @@ p {
   margin-top: 12vw;
   gap: 2vw;
 }
-section.BackStagePassSection {
-  position: relative;
-  padding-bottom: 12vw;
-}
+
 .Card-inner {
   padding: 2vw 2.9vw;
 }
@@ -712,7 +727,6 @@ section.BackStagePassSection {
   max-width: 8vw;
 }
 .CounterCard {
-  width: 22.9vw;
   border: 1px solid #282828;
   border-radius: 1vw;
 }
@@ -766,24 +780,231 @@ span.icon {
 }
   
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 93%;
+    margin: 0 auto;
+    height: inherit;
+}
   .animated-logo {
     padding: 30px 0;
 }
-  
+.HeroSection-title h1 {
+  font-size: 46px;
+}
+.HeroSection-subtitle h5 {
+  margin: 20px 0;
+  font-size: 18px;
+}
+a.btn button {
+  min-width: 150px;
+  font-size: 13px;
+  padding: 12px 0;
+}
+.section-title h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 13px;
+}
+.WhatWeSection-varticle-card {
+  gap: 20px;
+}
+.VerticleCard-inner {
+  padding: 20px;
+  gap: 0px;
+}
+.VerticleCard-img {
+  width: 18%;
+}
+.VerticleCard-content {
+  width: 82%;
+}
+.VerticleCard-content-title h4 {
+  font-size: 20px;
+}
+.BackStagePassSection-cards {
+  margin-top: 80px;
+  gap: 2vw;
+}
+.Card-content-description h5 {
+  font-size: 14px;
+  height: 85px;
 }
 
-.Card-img, .VerticleCard-img {
-  position: relative;
-  transition: transform 0.3s ease-in-out;
+.CounterCard {
+  border: 1px solid #282828;
+  border-radius: 1vw;
 }
-.VerticleCard-inner:hover .VerticleCard-img img{
-  animation: imageHanging 2s ease-in-out infinite alternate;
+.CounterCard-circle {
+  max-width: 90px;
+}
+.CounterCard-content-title h2 {
+  font-size: 16px;
+}
+.accordion-header {
+  padding: 10px;
+}
+.accordion-title {
+  font-size: 15px;
+}
+.accordion-content li {
+  margin-bottom: 1vw;
+  font-size: 13px;
+}
+.accordion-content {
+  padding: 0 4vw 1vw;
+}
+.ml9 {
+  font-size: 34px;
+}
 }
 
-.Card-inner:hover .Card-img img {
-  animation: imageHanging 2s ease-in-out infinite alternate;
+
+@media screen and (max-width: 600px) {
+  .inner-section {
+    padding: 30px 0;
 }
+  .HeroSection-bg-video {
+    overflow-x: hidden;
+}
+  .HeroSection-bg-video video {
+    width: 800px;
+}
+.HeroSection-title h1 {
+  font-size: 34px;
+}
+.HeroSection-subtitle h5 {
+  margin: 15px 0;
+  font-size: 16px;
+}
+a.btn button {
+  min-width: 140px;
+}
+.section-title h2 {
+  font-size: 26px;
+}
+p {
+  font-size: 14px;
+}
+.VerticleCard-inner {
+  flex-direction: column;
+}
+.VerticleCard-img {
+  width: 100%;
+}
+.VerticleCard-content {
+  width: 100%;
+}
+.VerticleCard-img img {
+  width: 100%;
+  max-width: 100px;
+}
+
+.BackStagePassSection-cards {
+  flex-direction: column;
+  margin-top: 30px;
+}
+.Card {
+  width: 100%;
+}
+.Card-inner {
+  padding: 50px ;
+}
+.Card-img img {
+  max-width: 100px;
+}
+.Card-content-description h5 {
+  font-size: 18px;
+  height: inherit;
+  margin-bottom: 15px;
+}
+.ImageWithText-inner {
+  flex-direction: column;
+  gap: 10px;
+}
+.ImageWithText-inner-left {
+  width: 100%;
+}
+.ImageWithText-inner-right {
+  width: 100%;
+}
+.ImageWithText-inner-btns {
+  margin-bottom: 10px;
+}
+.HeroSection-btns, .CallToAction-inner-btns, .Promotional_CTA-inner-btns {
+  gap: 10px;
+}
+.MarketSection-cards {
+  display: grid;
+  gap: .9vw;
+  grid-template-columns: 100%;
+}
+.CounterCard {
+  width: 100%;
+  border-radius: 10px;
+}
+.CounterCard-content-list-item {
+  gap: 10px;
+}
+.CounterCard-content-list-item-icon i.fa.fa-chevron-right {
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+}
+.CounterCard-inner {
+  padding: 30px 20px;
+}
+.MarketSection-cards {
+  gap: 10px;
+}
+.MarketSection-inner {
+  padding-bottom: 0;
+}
+.FaqSection-inner-faq-lists {
+  gap: 10px;
+  flex-direction: column;
+}
+.FaqSection-inner-faq-lists-left, .FaqSection-inner-faq-lists-right {
+  width: 100%;
+}
+.accordion-content {
+  padding: 0 40px 1vw;
+}
+.accordion-item {
+  margin-bottom: 10px;
+}
+span.icon {
+  font-size: 15px;
+}
+.Promotional_CTA-inner {
+  flex-direction: column;
+}
+.Promotional_CTA-inner-left, .Promotional_CTA-inner-right {
+  width: 100%;
+  text-align: center;
+}
+.ml9 {
+  font-size: 10.5vw;
+}
+.Promotional_CTA-inner-btns {
+  justify-content: center;
+}
+.Footer-inner {
+  flex-direction: column-reverse;
+}
+.Footer-inner-left, .Footer-inner-center, .Footer-inner-right {
+  width: 100%;
+}
+.Footer-copiright p {
+  text-align: center;
+}
+.animated-logo img, .Footer-logo img {
+  max-width: 120px;
+}
+}
+
 
 @keyframes imageHanging {
   0% { transform: translateY(0px); }

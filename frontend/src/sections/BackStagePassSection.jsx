@@ -47,12 +47,13 @@ export default function BackStagePassSection() {
 
   return (
     <section className="BackStagePassSection section">
+      
+      <div className="BackStagePassSection-outer outer-section">
       <div className="BackStagePassSection-bg-video">
         <video className="videoembed" autoPlay loop muted>
           <source src={bgVideo} type="video/mp4" />
         </video>
       </div>
-      <div className="BackStagePassSection-outer outer-section">
         <div className="container">
           <div className="BackStagePassSection-inner inner-section">
             <div className="section-title BackStagePassSection-title align-center">
@@ -80,6 +81,7 @@ export default function BackStagePassSection() {
           </div>
         </div>
       </div>
+      
     </section>
   );
 }
