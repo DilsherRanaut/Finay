@@ -948,6 +948,9 @@ p {
 .CounterCard-content-list-item {
   gap: 10px;
 }
+.CounterCard-content-title br {
+  display: none;
+}
 .CounterCard-content-list-item-icon i.fa.fa-chevron-right {
   width: 20px;
   height: 20px;
@@ -983,6 +986,9 @@ span.icon {
 }
 .Promotional_CTA-inner-left, .Promotional_CTA-inner-right {
   width: 100%;
+  text-align: center;
+}
+.ml9.Promotional_CTA-inner-title {
   text-align: center;
 }
 .ml9 {

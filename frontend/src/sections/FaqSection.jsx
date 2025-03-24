@@ -634,7 +634,7 @@ export default function FaqSection() {
     {
       title: (
         <>
-          What Are Our Biggest <span className="text-orange">Risks</span>?
+          What Are Our Biggest <span className="text-orange">Risks?</span>
         </>
       ),
       content: (
